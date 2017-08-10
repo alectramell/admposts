@@ -1,10 +1,13 @@
 #!/bin/bash
 
-if [ -d /home/$(whoami)/.admapps ] || [ -e /home/$(whoami)/.admapps/admapp.sh ]
+if [ -e /home/$(whoami)/.admapps/admapp.sh ]
 then
-	rm /home/$(whoami)/.admapps/admapp.sh
-	wget https://github.com/alectramell/admposts/raw/master/main.sh -O /home/$(whoami)/.admapps/adm.sh
 	bash /home/$(whoami)/.admapps/admapp.sh
 else
+	mkdir /home/$(whoami)/.admapps
+	wget https://github.com/alectramell/admposts/raw/master/main.sh -O /home/$(whoami)/.admapps/admapp.sh
+	clear
+	sleep 0.5
+	clear
 	bash /home/$(whoami)/.admapps/admapp.sh
 fi
