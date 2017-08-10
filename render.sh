@@ -7,7 +7,7 @@ WHEREAMI=$(pwd)
 
 clear
 
-NEWPOST=$(zenity --entry --title="Apollon Data Metrics (AGY) Update Post" --text="update:" --width="400")
+read -p "(ADM) Update Post: " NEWPOST
 
 clear
 
@@ -23,4 +23,4 @@ git push origin master
 
 clear
 
-echo "..POST UPDATED!.." | pv -qL 10
+echo "..POST UPDATED! (Please allow 5-10 minutes for update to take effect).." | pv -qL 10
