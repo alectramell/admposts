@@ -22,6 +22,7 @@ UPDATE() {
 	sleep 5
 	clear
 	echo "${blue}Apollon Data Metrics (AGY): ${reset}$STATUS"
+	notify-send --urgency="critical" --icon="https://raw.githubusercontent.com/alectramell/admposts/master/icon.svg" "$STATUS"
 }
 
 clear
