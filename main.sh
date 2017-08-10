@@ -20,4 +20,5 @@ do
 	source <(curl -s https://raw.githubusercontent.com/alectramell/admposts/master/updates.sh)
 	clear
 	UPDATE
+	sleep 30
 done
