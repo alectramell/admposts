@@ -14,5 +14,3 @@ GETAPP() {
 		bash /home/$(whoami)/.admapps/admapp.sh
 	fi
 }
-
-$1
