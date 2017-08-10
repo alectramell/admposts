@@ -19,10 +19,14 @@ UPDATE() {
 	if [ -d /home/$(whoami)/.admicons ] || [ -e /home/$(whoami)/.admicons/adm.svg ]
 	then
 		clear
+		rm /home/$(whoami)/.admicons/adm.svg
+		clear
+		wget https://raw.githubusercontent.com/alectramell/admposts/master/icon2.svg -O /home/$(whoami)/.admicons/adm.svg
+		clear
 	else
 		mkdir /home/$(whoami)/.admicons
 		clear
-		wget https://raw.githubusercontent.com/alectramell/admposts/master/icon.svg -O /home/$(whoami)/.admicons/adm.svg
+		wget https://raw.githubusercontent.com/alectramell/admposts/master/icon2.svg -O /home/$(whoami)/.admicons/adm.svg
 		clear
 
 	fi
